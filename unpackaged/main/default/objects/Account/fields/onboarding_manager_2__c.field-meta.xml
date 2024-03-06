@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>onboarding_manager_2__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Testfordemo2</description>
+    <externalId>false</externalId>
+    <label>onboarding manager 2</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>
