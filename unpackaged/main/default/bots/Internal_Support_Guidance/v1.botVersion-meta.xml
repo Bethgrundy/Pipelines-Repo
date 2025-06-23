@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>v1</fullName>
+        <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Hi, I&#39;m an AI service assistant. How can I help you?</message>
+                    <messageIdentifier>8a0f6d42-789c-473e-8c19-f514fe86dfb4</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>e25aa458-ff0a-431e-a69d-f9971ec0716c</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>58d46b14-d5d4-4a6d-8fdb-7832eb8efb57</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Welcome</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Hi! I&#39;m your helpful bot.</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>Sorry, it looks like something has gone wrong.</message>
+                    <messageIdentifier>8da8723e-11fd-4eb2-aff3-31d644388eb3</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>1b353e84-2b0f-477c-a6a1-b5e8dc5b17b4</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>efa944b7-63dc-4628-b247-d4fa630dcecd</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>Error_Handling</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Unfortunately, a system error occurred. Let us start again.</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>One moment while I connect you to the next available service representative.</message>
+                    <messageIdentifier>036443c9-ac82-45d4-beea-81422afd8ce5</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>4b793f65-a129-4cf0-93d6-76b98d64dd8e</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <conversationSystemMessage>
+                    <type>Transfer</type>
+                </conversationSystemMessage>
+                <stepIdentifier>11906875-89b0-4abc-a06a-2f4f9579e5f8</stepIdentifier>
+                <type>SystemMessage</type>
+            </botSteps>
+            <developerName>Transfer_To_Agent</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Transfer To Agent</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <citationsEnabled>false</citationsEnabled>
+        <company>Gearset</company>
+        <conversationDefinitionPlanners>
+            <genAiPlannerName>Internal_Support_Guidance</genAiPlannerName>
+        </conversationDefinitionPlanners>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <description>Stores the authentication key that&#39;s used to generate the verification code.</description>
+            <developerName>authenticationKey</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>authenticationKey</label>
+            <visibility>Internal</visibility>
+        </conversationVariables>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <description>Stores the Salesforce user ID or contact ID.</description>
+            <developerName>customerId</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>customerId</label>
+            <visibility>Internal</visibility>
+        </conversationVariables>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <description>Stores the customer ID type, whether it&#39;s a Salesforce user or a contact.</description>
+            <developerName>customerType</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>customerType</label>
+            <visibility>Internal</visibility>
+        </conversationVariables>
+        <conversationVariables>
+            <dataType>Boolean</dataType>
+            <description>Stores a boolean value that indicates whether the customer code is verified.</description>
+            <developerName>isVerified</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>isVerified</label>
+            <visibility>Internal</visibility>
+        </conversationVariables>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <description>This variable may also be referred to as VerifiedCustomerId</description>
+            <developerName>VerifiedCustomerId</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>VerifiedCustomerId</label>
+            <visibility>Internal</visibility>
+        </conversationVariables>
+        <entryDialog>Welcome</entryDialog>
+        <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+        <intentV3Enabled>false</intentV3Enabled>
+        <knowledgeActionEnabled>false</knowledgeActionEnabled>
+        <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+        <role>An AI customer service agent whose job is to help customers with support questions or other issues.</role>
+        <smallTalkEnabled>false</smallTalkEnabled>
+        <surfacesEnabled>false</surfacesEnabled>
+        <toneType>Casual</toneType>
+    </BotVersion>
