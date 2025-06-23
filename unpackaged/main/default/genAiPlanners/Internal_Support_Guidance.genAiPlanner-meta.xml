@@ -8,6 +8,9 @@
         <genAiPluginName>Customer_Support_Request</genAiPluginName>
     </genAiPlugins>
     <genAiPlugins>
+        <genAiPluginName>SvcCopilotTmpl__Escalation</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
         <genAiPluginName>SvcCopilotTmpl__GeneralFAQ</genAiPluginName>
     </genAiPlugins>
     <masterLabel>Internal Support Guidance</masterLabel>
